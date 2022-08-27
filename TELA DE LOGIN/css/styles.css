@@ -1,0 +1,125 @@
+/*GERAL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: #323232;
+    border: none;
+}
+
+body { 
+    background-image: url('https://picsum.photos/1024/768'); /* ou colocar caso queira mandar uma imagem específica (colocar na pasta img) '../img/background.png'*/
+    background-size: cover;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a { 
+    font-size: .8rem; /* 16 x 0,8= x para problemas de resposividade é necessário deixar em rem ao invés de px*/
+}
+
+a:hover {
+    color: #08558b;
+}
+
+/*CONTAINER LOGIN*/
+
+.login-container {
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh; /*view hight, altura da tela, também para responsividade*/
+    border-radius: 10px;
+    text-align: center;
+}
+/*FORMULÁRIO - FORMS*/
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus { 
+    border-bottom: 2px solid #08558B;
+}
+
+.forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700; /*ou bold*/
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558B;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1B223C;
+    transition: .5s;
+}
+
+/*REDES SOCIAIS*/
+
+#social-container, #social-container p {
+    margin-bottom: 20px;
+}
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.fa-linkedin {
+    background-color: #0077B5;
+}
+
+.fa-google {
+    background-color: #636363;
+}
+
+/*Registrar*/
+
+.register-container {
+    margin-bottom: 10px;
+}

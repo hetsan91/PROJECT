@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--é necessário ter uma linkagem com a fonte desejada para redes sociais-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="">
+            <!--campo que irá ficar ao lado do campo para digitar e-mail-->
+            <label for="email">E-mail</label>
+            <!--campo para digitação V input=lugar onde será colocada a informação desejada. Como o type é e-mail então é necessário @ para preencher o input. Place holder é a informação que fica escrita enquanto não está selecionado o campo. (autocomplete off para não auto sugerir email). Name é utilizado no back-end-->
+            <input type="email" name="email" class="email" placeholder="Digite seu e-mail" autocomplete="off">
+            <label for="password">Senha</label>
+            <input type="password" name="password" class="password" placeholder="Digite a sua senha">
+            <!--o link a para caso a pessoa tenha esquecido a senha-->
+            <a href="#" class="forgot-pass">Esqueceu a senha?</a>
+            <!--ação de envio de formulário no caso o type submit. botão para login. VALUE é oq estará escrito no botão  -->
+            <input type="submit" value="login">
+        </form>
+        <!--aqui que serão adicionadas as redes sociais-->
+        <div id="social-container">
+            <p>Ou faça login com suas redes sociais</p>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-google"></i>
+        </div>
+        <div class="register-container">
+            <p>Não possui uma conta?</p>
+            <a href="#">Registrar</a>
+        </div>
+    </div>
+</body>
+</html>
